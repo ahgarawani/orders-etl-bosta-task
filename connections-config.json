@@ -1,0 +1,19 @@
+{
+  "connections": [
+    {
+      "id": "mysql_sales_analytics",
+      "name": "Sales Analytics DB",
+      "driverId": "mysql",
+      "providerId": "generic",
+      "host": "mysql-dwh",
+      "port": "3306",
+      "databaseName": "sales_analytics_db",
+      "authModelId": "native",
+      "userName": "root",
+      "savePassword": true,
+      "credentials": {
+        "password": "1234"
+      }
+    }
+  ]
+}

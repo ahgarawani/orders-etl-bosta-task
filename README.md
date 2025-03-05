@@ -10,16 +10,17 @@ This is an end-to-end ETL pipeline to pull orders data, transform it, load it in
    - [Run on Codespaces](#run-on-codespaces)
    - [Run Locally](#run-locally)
 4. [Exploring Data Pipeline](#exploring-data-pipeline)
-5. [Architecture](#architecture)
+5. [Explore The Database](#explore-the-database)
+6. [Architecture](#architecture)
    - [Overview](#overview)
    - [Flow](#flow)
-6. [Database Design](#database-design)
+7. [Database Design](#database-design)
    - [Schema Design](#schema-design)
    - [Strengths and Weaknesses](#strengths-and-weaknesses)
    - [Justification](#justification)
-7. [Query Optimization Techniques](#query-optimization-techniques)
-8. [Email Notification Feature](#email-notification-feature)
-9. [Future Considerations](#future-considerations)
+8. [Query Optimization Techniques](#query-optimization-techniques)
+9. [Email Notification Feature](#email-notification-feature)
+10. [Future Considerations](#future-considerations)
 
 ## Introduction
 
@@ -67,6 +68,21 @@ Go to:
 ## Exploring Data Pipeline
 
 Navigate to the `Airflow` UI, you will be prompted for a username and a password, use `airflow` for both. After you have successfully logged in, you will find a single DAG `orders_etl_dag` that has yet to be executed. Run it, wait for it to finish, and the data warehouse will be populated.
+
+## Explore The Database
+
+The database can be accessed using the `Adminer` tool deployed through docker as well and can be accessed as follows:
+
+- **If you run on Codespaces**: Simply go to the `ports` tab, you will find a link exposing the `Adminer` port which is `8081`, click on it.
+- **If you run locally**: Simply go to [http://localhost:8081](http://localhost:8081).
+
+afterwards use the following credentials:
+
+- **System**: MySQL
+- **Server**: mysql-dwh
+- **Username**: root
+- **Password**: 1234
+- **Database**: sales_analytics_db
 
 ## Architecture
 
