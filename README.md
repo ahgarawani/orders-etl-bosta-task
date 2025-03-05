@@ -10,7 +10,7 @@ This is an end-to-end ETL pipeline to pull orders data, transform it, load it in
    - [Run on Codespaces](#run-on-codespaces)
    - [Run Locally](#run-locally)
 4. [Exploring Data Pipeline](#exploring-data-pipeline)
-5. [Explore The Database](#explore-the-database)
+5. [Exploring The Database](#exploring-the-database)
 6. [Architecture](#architecture)
    - [Overview](#overview)
    - [Flow](#flow)
@@ -69,7 +69,7 @@ Go to:
 
 Navigate to the `Airflow` UI, you will be prompted for a username and a password, use `airflow` for both. After you have successfully logged in, you will find a single DAG `orders_etl_dag` that has yet to be executed. Run it, wait for it to finish, and the data warehouse will be populated.
 
-## Explore The Database
+## Exploring The Database
 
 The database can be accessed using the `Adminer` tool deployed through docker as well and can be accessed as follows:
 
